@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First</title>
+        <link rel="stylesheet" href="learncss.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav"  id="dropdownclick">
+                <li> <a href="#Home">Home</a> </li>
+                <li> <a href="#News">News</a> </li>
+                <li> <a href="#Contacts">Contacts</a></li>
+                <li> <a href="#About">About</a> </li>
+                <li class="topnav-right"> <a href="#Sign Up">Sign Up</a></li>
+                <li class="topnav-right"> <a href="#Log in">Log in</a></li>
+                <li class="dropdownicon"> <a href="javascript:void(0);" onclick="dropdownmenu()">&#9776</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="container" id="section1">  
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftcol">
+                        <h1 class="large">FGIS</h1>
+                        <h1 class="large">The next generation of Female Scientists</h1>
+                    </div>
+                    <!-- ######################################Use this in your log in page############################ -->
+                    <form action="">
+                        <div class="leftcol ">
+                            <h2>Username</h2>
+                            <input class="inputbox" type="text" name="username" placeholder="Username">
+                            <h2>Password</h2> 
+                            <input class="inputbox" type="password" name="password" placeholder="Password">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-6">
+                    <div class="rightcol">
+                        <div class="logo">
+                            <img src="fgis.jpg" alt="">
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <script>
+            function dropdownmenu(){
+                var x=document.getElementById("dropdownclick");
+                if(x.className==="topnav"){
+                    x.className +=" responsive";
+                    // change topnav to  topnav.responsive
+                }
+                else{
+                    x.className="topnav";
+                }
+        
+            }
+        </script>
+    </body>
+</html>

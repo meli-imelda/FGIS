@@ -1,0 +1,193 @@
+/* defaults */
+nav, header, footer{
+    display: block;
+}
+
+body{
+    line-height: 2;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content:"";
+} 
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+/*#################################### nav bar #############################################*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: rgb(240, 232, 232);
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;  
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none ;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+
+ul.topnav li a:hover{
+    background-color: white ;
+    color: black;
+}
+ul.topnav li.dropdownicon{
+    display: none;
+}
+
+/* ####################Custom styles################ */
+#section1{
+    background: blue;
+    background: -webkit-linear-gradient(rgb(31, 140, 230),blue );
+    background: -moz-linear-gradient(rgb(31, 140, 230),blue);
+    background: -o-linear-gradient(rgb(31, 140, 230),blue);
+    background: linear-gradient(rgb(31, 140, 230),blue) ;
+}
+
+div.leftcol{
+    margin-left: 10%;
+}
+
+div.rightcol{
+    margin-left: 10%;
+}
+
+img{
+    border-radius: 50%;
+    height: 70%;
+    width: 80%;
+}
+h1.large{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    margin: 0;
+    line-height: 50px;
+}
+
+form h2{
+    color: white;
+    font-style: italic;
+}
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    
+}
+
+input[type="password"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    
+}
+ 
+
+/* Moblie styles */
+/* media query */
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownicon{
+        display: block;
+        float: right ;
+    }
+
+    ul.topnav.responsive li.dropdownicon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+
+    .col-6{
+        width: 100%;
+        margin: 0;
+    }
+
+    div leftcol, div rightcol{
+        margin: 15px;
+    }
+
+    input[type="text"]{
+        width:350px;
+    }
+    
+    input[type="password"]{
+        width:350px;
+    }
+    .logo img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+        overflow: hidden;
+        margin: 0;
+        }   
+
+
+}
+
+
