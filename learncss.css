@@ -7,7 +7,19 @@ body{
     line-height: 2;
     margin: 0;
 }
+label{
+    font-size: 35px;
+    font-weight: bolder;
+}
+p{
+    font-size: 25px;
+    line-height: 1.2;
+}
 
+article p{
+    font-size: 30px;
+    padding:20px;
+}
 .container{
     width: 100%;
     margin: auto;
@@ -37,6 +49,10 @@ body{
 .col-10{width: 83.33%;}
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
 
 
 /*#################################### nav bar #############################################*/
@@ -87,7 +103,42 @@ ul.topnav li.dropdownicon{
     background: -o-linear-gradient(rgb(31, 140, 230),blue);
     background: linear-gradient(rgb(31, 140, 230),blue) ;
 }
+div.box{
+    text-align: center;
+    margin: 25px;
+    padding: 36px 10px 48px 24px;
+    border-radius: 10px;
+    background-color: rgb(252, 249, 238);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) ,
+     0 2px 3px 0 rgba(0,0,0,.1);
+}
+div.slopeicon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px /*H*/ -2px/*V*/ 20px/*Blur*/ 2px/*Spread*/
+   rgba(0 /*sh*/,0 /*bg*/,0/*bx*/,.15/*op*/),
+   2px 2px 4px 2px rgba(0,0,0,.1);
+}
+button{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    background-color: blue;
+    padding: 15px 60px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    margin: 5px;
+}
+button.learnmore{
+    display: block;
+    margin: auto;
+}
 
+div.image{
+    width :100%;
+}
 div.leftcol{
     margin-left: 10%;
 }
@@ -96,7 +147,7 @@ div.rightcol{
     margin-left: 10%;
 }
 
-img{
+div.logo img{
     border-radius: 50%;
     height: 70%;
     width: 80%;
@@ -107,6 +158,17 @@ h1.large{
     font-style: italic;
     margin: 0;
     line-height: 50px;
+}
+
+h1.headersec{
+    font-size: 65px;
+    text-align: center;
+    font-style: italic;
+    color: blue;
+
+}
+h4{
+    color: white;
 }
 
 form h2{
@@ -127,8 +189,40 @@ input[type="password"]{
     width: 400px;
     min-width: 100px;
     padding: 7px;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
+}
+footer.footsy{
+    background-color: rgb(71, 53, 233);
+    padding-left: 10%;
+}
+footer.footsy h1{
+    color: white;
+    font-size: 35px;
+}
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.footsy ul li{
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    border-radius: 100%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook, .fa-twitter, .fa-instagram {
+    background:rgb(97, 97, 240) ;
+    color: white;
+    text-align: left;
 }
  
 
@@ -161,10 +255,31 @@ input[type="password"]{
         display: block;
         text-align: left;
     }
+    article p{
+        font-size: 25px;
+    }
 
-    .col-6{
+
+    .col-6 , .col-4, .col-7 ,.col-5{
         width: 100%;
         margin: 0;
+    }
+
+    div.mobilestack{
+        width: 50%;
+        display: block;
+    }
+
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    div.slopeicon{
+        margin: 10px;
+    }
+    div.slopeicon img{
+        width: 100%;
+
     }
 
     div leftcol, div rightcol{
